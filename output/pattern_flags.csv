@@ -1,0 +1,29 @@
+﻿emp_id,name,team,pattern_code,pattern_name,detail
+E002,이수빈,게임QA,OVERWORK_CHRONIC,장시간 근로 반복,8주 중 6주가 48h 초과
+E003,윤다은,게임QA,OVERWORK_CHRONIC,장시간 근로 반복,8주 중 6주가 48h 초과
+E004,임지민,게임QA,OVERWORK_SPIKE,특정 주 근로시간 급증,"52h 초과 주: 11/2, 11/9"
+E005,윤하준,게임QA,OVERWORK_SPIKE,특정 주 근로시간 급증,"52h 초과 주: 11/2, 11/9"
+E006,최미래,게임QA,LATE_REPEAT,반복 지각,최근 4주 지각 3회
+E012,이예린,모바일QA,OVERWORK_CHRONIC,장시간 근로 반복,8주 중 6주가 48h 초과
+E013,윤주원,모바일QA,OVERWORK_SPIKE,특정 주 근로시간 급증,"52h 초과 주: 10/12, 10/19"
+E014,임지우,모바일QA,OVERWORK_SPIKE,특정 주 근로시간 급증,52h 초과 주: 10/19
+E016,임동현,모바일QA,LATE_REPEAT,반복 지각,최근 4주 지각 10회
+E016,임동현,모바일QA,LATE_WORSENING,지각 증가 추세,이전 4주 1회 → 최근 4주 10회
+E024,한영훈,고객상담,LATE_REPEAT,반복 지각,최근 4주 지각 5회
+E025,권소연,고객상담,LATE_REPEAT,반복 지각,최근 4주 지각 9회
+E026,최승현,고객상담,ABSENCE_UNEXCUSED,무단결근 반복,무단결근 3회
+E027,장정우,고객상담,ABSENCE_UNEXCUSED,무단결근 반복,무단결근 3회
+E028,홍준서,고객상담,ABSENCE_UNEXCUSED,무단결근 반복,무단결근 3회
+E028,홍준서,고객상담,ABSENCE_HOLIDAY_ADJ,휴일 전후 결근,휴일 전후 결근 3회
+E029,박우진,고객상담,LATE_REPEAT,반복 지각,최근 4주 지각 4회
+E029,박우진,고객상담,LATE_WEEKDAY_BIAS,특정 요일 편중,월요일 6/7건
+E032,임시윤,게임운영,OVERWORK_CHRONIC,장시간 근로 반복,8주 중 6주가 48h 초과
+E033,조민재,게임운영,LATE_WEEKDAY_BIAS,특정 요일 편중,화요일 3/5건
+E034,김준혁,게임운영,LATE_REPEAT,반복 지각,최근 4주 지각 7회
+E034,김준혁,게임운영,LATE_WORSENING,지각 증가 추세,이전 4주 0회 → 최근 4주 7회
+E035,강채원,게임운영,ABSENCE_UNEXCUSED,무단결근 반복,무단결근 3회
+E036,황세영,게임운영,LATE_REPEAT,반복 지각,최근 4주 지각 5회
+E036,황세영,게임운영,LATE_WEEKDAY_BIAS,특정 요일 편중,월요일 5/6건
+E036,황세영,게임운영,LATE_WORSENING,지각 증가 추세,이전 4주 1회 → 최근 4주 5회
+E047,권소율,경영지원,ABSENCE_UNEXCUSED,무단결근 반복,무단결근 2회
+E047,권소율,경영지원,ABSENCE_HOLIDAY_ADJ,휴일 전후 결근,휴일 전후 결근 2회
