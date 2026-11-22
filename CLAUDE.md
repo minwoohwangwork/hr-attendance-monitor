@@ -58,6 +58,8 @@ python -m venv "$env:LOCALAPPDATA\hr-attendance-mcp\venv"
 
 - 셸은 Windows PowerShell 5.1. 한글 출력이 깨지면 `[Console]::OutputEncoding = [Text.Encoding]::UTF8; $env:PYTHONIOENCODING='utf-8'`를 먼저 실행한다.
 - Python 3.11 이상(`tomllib` 사용). 개발은 3.15에서 했다. 1단계는 외부 패키지가 없다. MCP 서버에만 `mcp` 패키지를 쓴다.
+- 기본 `python`이 3.10인 PC가 있다. 그때는 `py -3.12`로 실행한다.
+- GitHub CLI(`gh`)가 PATH에 없으면 `"$env:ProgramFiles\GitHub CLI\gh.exe"`로 부른다.
 - `git`이 PATH에 없을 수 있다. 그때는 `"$env:ProgramFiles\Git\cmd\git.exe"`로 직접 부른다.
 - CSV는 엑셀 호환을 위해 `utf-8-sig`로 저장한다.
 - `mcp` 2.x는 1.x와 API가 다르다. `FastMCP`가 아니라 `from mcp.server.mcpserver import MCPServer`를 쓴다. 인터넷의 1.x 예제를 그대로 쓰지 말고 설치된 패키지를 먼저 확인한다.
@@ -101,7 +103,7 @@ tar.exe -a -cf C:\dev\HR.zip --exclude=__pycache__ --exclude=logs -C C:\dev HR
 
 ## 남은 일과 알려진 한계
 
-- **GitHub**: 원격 저장소가 아직 없다(비공개 저장소로 올릴 예정). 커밋 작성자는 저장소 로컬 설정에 들어 있다.
+- **GitHub**: 비공개 저장소 `minwoohwangwork/hr-attendance-monitor`(원격 이름 `origin`, 브랜치 `main`)에 올렸다(2026-11-22). 커밋 작성자는 저장소 로컬 설정에 들어 있다. 심사자에게 보여 주려면 협업자로 초대하거나 공개로 바꿔야 한다. 공개로 바꾸면 커밋 작성자 이메일도 공개되므로 먼저 묻는다.
 - **노션**: 포트폴리오 페이지 「근태·주 52시간 사전 경고 도구 (가상 데이터 데모)」와 「인사운영 업무 지도 & HR AX 후보 (공고 기반 가설)」 모두 비공개다. 노션 MCP로 제목을 검색하면 찾을 수 있다. 포트폴리오 페이지 부록의 GitHub 링크는 자리 표시로 비어 있다.
 - **캡처 이미지**: 노션에 올린 리포트 PNG 3장과 생성 스크립트는 저장소 밖(원래 PC의 `C:\dev\HR-notion-images`)에 있어 이 저장소에 없다. 다시 만들려면 `output/reports/`의 HTML을 Edge 헤드리스(`--headless=new --screenshot`)로 캡처한다. MCP 조회 예시 이미지는 실제 도구 응답을 화면용으로 정리한 것이며 Claude Desktop 캡처가 아니다.
 - **Claude Desktop 연결**: MCP SDK 클라이언트로만 검증했다. 실제 앱에서의 대화 조회는 확인하지 않았다.
